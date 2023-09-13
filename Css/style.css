@@ -113,16 +113,6 @@ body {
   box-shadow: 5px 10px 10px 1px hsl(207, 29%, 88%);
   width: 85%;
 }
-@media (max-width: 995px) {
-  .card {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .card {
-    flex-wrap: wrap;
-  }
-}
 .card img {
   width: 40%;
   border-radius: 20px 0 0 20px;
@@ -306,6 +296,17 @@ body {
     overflow: hidden;
   }
 }
+@media (max-width: 995px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex-wrap: wrap;
+    margin: 120px auto 80px;
+  }
+}
 
 /*! start Attribution */
 .attribution {
@@ -334,11 +335,16 @@ body {
   font-size: 14px;
   padding: 0 8px;
 }
-@media (max-width: 768px) {
-  .attribution {
-    bottom: -4rem;
-  }
-}
 
 /*! end Attribution */
+@media (max-width: 768px) {
+  .container {
+    height: initial;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .attribution {
+    position: initial;
+  }
+}
 /*! end code *//*# sourceMappingURL=style.css.map */
